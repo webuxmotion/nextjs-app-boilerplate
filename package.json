@@ -6,16 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "mock": "json-server -w db.json -p 4200 -d 450",
+    "mock": "json-server -w db.json -p 4100 -d 450",
     "serve": "concurrently \"npm run dev\" \"npm run mock\""
   },
   "dependencies": {
     "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
     "json-server": "^0.16.1",
     "next": "9.4.4",
     "nextjs-progressbar": "0.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.41",
+    "typescript": "^3.9.6"
   }
 }
